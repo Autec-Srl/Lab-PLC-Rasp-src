@@ -60,11 +60,11 @@ def main():
    try: 
       D=Db7.db(server="10.16.0.197",database="Lab1")
       print(D.TableNameis())
-      D.DeleteAllTable()
-      D.MakeConfigTable("CONFIG123")
-      D.WriteConfigTableRaw(NextTable="CONFIG123",NomeTest="Mio" ,NomeMacchina="Bo" ,IpMacchina="69.69.69.69",NomeArticolo="cazz0" ,Dataeora="1" ,Errori=0,StartIndex=0,StopIndex=1000 ,DurataAcq=10 ,FreqDiCamp=15000 ,Periododiacquisizione=1000 ,NomeA2D01="NULL" ,NomeA2D11="NULL",NomeA2D21="NULL",NomeA2D31="NULL",NomeA2D41="NULL",NomeA2D51="NULL",NomeA2D61="NULL",NomeA2D71="NULL",NomeA2D81="NULL",NomeA2D91="NULL",NomeA2DA1="NULL" ,NomeA2DB1="NULL",NomeA2DC1="NULL",NomeA2DD1="NULL",NomeA2DE1="NULL",NomeA2DF="NULL",NomeA2D02="NULL",NomeA2D12="NULL",NomeA2D22="NULL",NomeA2D32="NULL",NomeA2D42="NULL",NomeA2D52="NULL",NomeA2D62="NULL",NomeA2D72="NULL",NomeA2D82="NULL",NomeA2D92="NULL",NomeA2DA2="NULL",NomeA2DB2="NULL",NomeA2DC2="NULL",NomeA2DD2="NULL",NomeA2DE2="NULL",NomeA2DF2="NULL",NomeA2D03="NULL",NomeA2D13="NULL",NomeA2D23="NULL",NomeA2D33="NULL",NomeA2D43="NULL",NomeA2D53="NULL",NomeA2D63="NULL",NomeA2D73="NULL",NomeA2D83="NULL",NomeA2D93="NULL",NomeA2DA3="NULL",NomeA2DB3="NULL",NomeA2DC3="NULL",NomeA2DD3="NULL",NomeA2DE3="NULL",NomeA2DF3="NULL",ciclitracontrollo=1000,ciclitraAcquisizione =100,ciclitotali=1000 ,numerosemicilci=5 ,pausa=1 ,sel=0 ,f=0  ,AMax =1,VMax=2 ,A0=3  ,SMax=4 )
+      #D.DeleteAllTable()
+      #D.MakeConfigTable("CONFIG123")
+      #D.WriteConfigTableRaw(NextTable="CONFIG123",NomeTest="Mio" ,NomeMacchina="Bo" ,IpMacchina="69.69.69.69",NomeArticolo="cazz0" ,Dataeora="1" ,Errori=0,StartIndex=0,StopIndex=1000 ,DurataAcq=10 ,FreqDiCamp=15000 ,Periododiacquisizione=1000 ,NomeA2D01="NULL" ,NomeA2D11="NULL",NomeA2D21="NULL",NomeA2D31="NULL",NomeA2D41="NULL",NomeA2D51="NULL",NomeA2D61="NULL",NomeA2D71="NULL",NomeA2D81="NULL",NomeA2D91="NULL",NomeA2DA1="NULL" ,NomeA2DB1="NULL",NomeA2DC1="NULL",NomeA2DD1="NULL",NomeA2DE1="NULL",NomeA2DF="NULL",NomeA2D02="NULL",NomeA2D12="NULL",NomeA2D22="NULL",NomeA2D32="NULL",NomeA2D42="NULL",NomeA2D52="NULL",NomeA2D62="NULL",NomeA2D72="NULL",NomeA2D82="NULL",NomeA2D92="NULL",NomeA2DA2="NULL",NomeA2DB2="NULL",NomeA2DC2="NULL",NomeA2DD2="NULL",NomeA2DE2="NULL",NomeA2DF2="NULL",NomeA2D03="NULL",NomeA2D13="NULL",NomeA2D23="NULL",NomeA2D33="NULL",NomeA2D43="NULL",NomeA2D53="NULL",NomeA2D63="NULL",NomeA2D73="NULL",NomeA2D83="NULL",NomeA2D93="NULL",NomeA2DA3="NULL",NomeA2DB3="NULL",NomeA2DC3="NULL",NomeA2DD3="NULL",NomeA2DE3="NULL",NomeA2DF3="NULL",ciclitracontrollo=1000,ciclitraAcquisizione =100,ciclitotali=1000 ,numerosemicilci=5 ,pausa=1 ,sel=0 ,f=0  ,AMax =1,VMax=2 ,A0=3  ,SMax=4 )
       Table_config=D.ReadConfigTableRaw("CONFIG123")
-      
+      print(Table_config)
      
    except:
        emailpy.SendMail(   username = "giampiero.novello@office365.com",
